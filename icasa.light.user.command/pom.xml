@@ -13,7 +13,7 @@
     <!-- DESCRIPTION OBLIGATOIRE DE L'ARTIFACT-->
     <!-- Le groupeid et la version sont hérité du parent -->
     <artifactId>icasa.light.user.command</artifactId>
-
+	<packaging>bundle</packaging>
     <dependencies>
         <!--iPOJO dep -->
         <dependency>
@@ -45,6 +45,8 @@
             <artifactId>icasa.light.api</artifactId>
             <version>${project.version}</version>
         </dependency>
+        
+        
     </dependencies>
 
     <!-- Ce qui va etre appelé dans la phase de build du projet (en plus des étapes par défaut de maven) -->

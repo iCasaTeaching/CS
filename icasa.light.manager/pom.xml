@@ -31,7 +31,17 @@
             <groupId>fr.liglab.adele.icasa</groupId>
             <artifactId>context.api</artifactId>
         </dependency>
+        
+        
+        <dependency>
+            <groupId>fr.liglab.adele.icasa.teaching</groupId>
+            <artifactId>icasa.light.api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    
     </dependencies>
+
+	
 
     <!-- Ce qui va etre appelé dasn la phase de build du projet (en plus de ceux définit par défaut dans maven) -->
     <build>
@@ -40,8 +50,6 @@
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
                 <configuration>
-                    <instructions>
-                    </instructions>
                 </configuration>
             </plugin>
             <plugin>
