@@ -1,17 +1,18 @@
 language: java
-
 sudo: false
-
+install: true
 os:
  - linux
-
+addons:
+  sonarqube:
+    token:
+      secure: "67dd5c2de62ea1ae8d6d185f54e926b8e33b4c0f"
 jdk:
   - oraclejdk8
-
-
-after_success:
- - mvn sonar:sonar -Dsonar.host.url=${SonarQubeURL} -Dsonar.login=${SonarQube}
- 
- mvn sonar:sonar \
-    -Dsonar.host.url=https://sonarqube.com \
-    -Dsonar.login=67dd5c2de62ea1ae8d6d185f54e926b8e33b4c0f
+script:
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.sonar/cache'
+      
