@@ -11,3 +11,7 @@ jdk:
 
 after_success:
  - mvn sonar:sonar -Dsonar.host.url=${SonarQubeURL} -Dsonar.login=${SonarQube}
+ 
+ mvn sonar:sonar \
+    -Dsonar.host.url=https://sonarqube.com \
+    -Dsonar.login=67dd5c2de62ea1ae8d6d185f54e926b8e33b4c0f
