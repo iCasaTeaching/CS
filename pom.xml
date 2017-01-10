@@ -20,7 +20,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- DESCRIPTION OBLIGATOIRE DE L'ARTIFACT-->
-    <groupId>fr.liglab.adele.icasa.teaching</groupId>
+    <groupId>fr.liglab.adele.icasa.teaching.perso</groupId>
     <artifactId>teaching.reactor</artifactId>
     <version>0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
