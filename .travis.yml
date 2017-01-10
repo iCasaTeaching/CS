@@ -6,6 +6,10 @@ os:
  - linux
 
 jdk: oraclejdk8
-
+addons:
+  apt:
+    packages:
+      - oracle-java8-installer
+      
 after_success:
  - mvn sonar:sonar -Dsonar.host.url=${SonarQubeURL} -Dsonar.login=${SonarQube} 
