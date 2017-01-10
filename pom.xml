@@ -50,9 +50,9 @@
     <!-- Ici on référence les sous modules, ceux-ci seront compilés si la compile est lancée à partir du présent POM-->
     <modules>
         <module>icasa.light.api</module>
-        <module>icasa.light.regulator</module>
+      <!--  <module>icasa.light.regulator</module>
         <module>icasa.light.manager</module>
-        <module>icasa.light.user.command</module>
+        <module>icasa.light.user.command</module>-->
     </modules>
 
     <!-- Définis une configuration et une version par défaut aux différentes dépendances utilisées-->
